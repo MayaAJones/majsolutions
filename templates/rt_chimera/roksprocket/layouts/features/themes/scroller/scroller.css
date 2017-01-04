@@ -1,0 +1,54 @@
+/**
+* @version   $Id: scroller.css 26163 2015-01-27 17:11:55Z james $
+* @author    RocketTheme http://www.rockettheme.com
+* @copyright Copyright (C) 2007 - 2015 RocketTheme, LLC
+* @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+
+/* Features - Layout Scroller - Core */
+.layout-scroller {position: relative;margin: 0;-webkit-transform: translateZ(0);}
+.layout-scroller:after {display: table;content: "";*zoom: 1;clear: both;}
+.layout-scroller ul {position: relative;list-style: none !important;margin: 0;padding: 0;}
+
+/* Features - Layout Scroller - Content */
+.layout-scroller .sprocket-features-list {position: relative;overflow: hidden;padding: 0 !important;margin: 0;width: 50%;}
+.layout-scroller .sprocket-features-list li {position: absolute;top: auto;left: auto;opacity: 0;width: 100%;height: 100%;display: none;}
+.layout-scroller .sprocket-features-list li.active {position: static;height: auto;opacity: 1;display: block;}
+.layout-scroller .sprocket-features-img-container {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box; padding: 15px;}
+.layout-scroller .sprocket-features-content {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box; padding: 0 15px 15px 15px;}
+.layout-scroller .sprocket-features-img-container {}
+.layout-scroller .sprocket-features-desc {margin-top: 10px;}
+.layout-scroller .readon {margin: 15px 0 0 0;display: table;}
+
+/* Features - Layout Scroller - Navigation */
+.layout-scroller .sprocket-features-arrows .arrow {position: absolute;display: block;width: 40px;height: 40px;top: 50%;margin-top: -12px;cursor: pointer;z-index: 10;text-align: center;font-size: 24px;line-height: 38px;opacity: 0.7;-webkit-transform: translateZ(0);-webkit-backface-visibility: hidden;}
+.layout-scroller .sprocket-features-arrows .arrow span {display: none;}
+.layout-scroller .sprocket-features-arrows .prev {left: -80px;}
+.layout-scroller .sprocket-features-arrows .next {right: -80px;}
+.layout-scroller .sprocket-features-arrows .arrow:hover {opacity: 1;}
+.layout-scroller .sprocket-features-arrows .arrow.next:before {content: '\f105';font-family: FontAwesome;}
+.layout-scroller .sprocket-features-arrows .arrow.prev:before {content: '\f104';font-family: FontAwesome;}
+.sprocket-features.arrows-onhover .sprocket-features-arrows .arrow {opacity: 0;}
+.sprocket-features.arrows-onhover:hover .sprocket-features-arrows .arrow {opacity: 1;}
+.layout-scroller .sprocket-features-pagination-hidden {display: none;}
+.layout-scroller .sprocket-features-pagination li {position: relative;padding: 20px;cursor: pointer;}
+.layout-scroller .sprocket-features-pagination li.active {opacity: 1;}
+.layout-scroller .sprocket-features-pagination li.active:before {color: #a8a8a8;font-family: FontAwesome;content: "\f0da";font-size: 1.5em;left: 0;position: absolute;top: 50%;margin:-12px 0 0 -15px;}
+.layout-scroller .sprocket-features-pagination li > span {display: none;font-size: 0.85em;line-height: 1em;}
+
+/* Features - Layout Scroller - Transitions */
+.layout-scroller .sprocket-features-pagination li, .layout-scroller .sprocket-features-arrows .arrow {-webkit-transition: opacity 0.2s ease-in;-moz-transition: opacity 0.2s ease-in;-o-transition: opacity 0.2s ease-in;transition: opacity 0.2s ease-in;}
+
+/* Features - Layout Scroller - Scrollbar */
+#sprocket-features-scroller-scrollbar { position: relative; width: 50%;}
+#sprocket-features-scroller-scrollbar .viewport { overflow: hidden; position: relative; }
+#sprocket-features-scroller-scrollbar .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
+#sprocket-features-scroller-scrollbar .scrollbar{ position: absolute; right: 0; width: 12px; z-index: 1;}
+#sprocket-features-scroller-scrollbar .track { height: 100%; width: 12px; position: relative; padding: 0; }
+#sprocket-features-scroller-scrollbar .thumb { height: 20px; width: 12px; cursor: pointer; position: absolute; top: 0; border-radius: 0;}
+#sprocket-features-scroller-scrollbar .thumb .end { overflow: hidden; }
+#sprocket-features-scroller-scrollbar .disable { display: none; }
+.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
+
+/* Custom */
+.layout-scroller .sprocket-features-arrows .arrow {color: #ffffff;background: rgba(0, 0, 0, 0.5);}

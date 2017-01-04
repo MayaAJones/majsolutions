@@ -1,0 +1,17 @@
+/**
+* @version   $Id: master-webkit.css 26163 2015-01-27 17:11:55Z james $
+* @author    RocketTheme http://www.rockettheme.com
+* @copyright Copyright (C) 2007 - 2015 RocketTheme, LLC
+* @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+
+/* General */
+a {-webkit-tap-highlight-color: rgba(0, 0, 0, 0.1) !important;}
+canvas {height: auto !important;}
+
+/* Navigation */
+.dropdown {-webkit-backface-visibility: hidden;}
+.gf-menu.l1 > li > .item {-webkit-backface-visibility: hidden;}
+.gf-menu .item.icon [class^="icon-"], .gf-menu .item.icon [class*=" icon-"] {-webkit-font-smoothing: inherit;}
+
+/* Demo */

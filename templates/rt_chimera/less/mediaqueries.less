@@ -1,0 +1,319 @@
+/**
+* @version   $Id$
+* @author    RocketTheme http://www.rockettheme.com
+* @copyright Copyright (C) 2007 - 2015 RocketTheme, LLC
+* @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+
+@import "variables.less";
+@import "/jui/less/mixins.less";
+@import "mixins/index.less";
+
+// Large Mode
+@media only screen and (min-width: 1200px) {
+	body.layout-mode-responsive {
+		// Responsive Classes
+		.visible-large {
+			display: inherit !important;
+		}
+		.hidden-large {
+			display: none !important;
+		}
+		.visible-desktop {
+			display: inherit !important;
+		}
+		.hidden-desktop {
+			display: none !important;
+		}
+	}
+}
+
+// Desktop Modes
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+	body.layout-mode-responsive {
+		// Responsive Classes
+		.visible-large {
+			display: none !important;
+		}
+		.hidden-large {
+			display: inherit !important;
+		}
+		.visible-desktop {
+			display: inherit !important;
+		}
+		.hidden-desktop {
+			display: none !important;
+		}
+
+		// Heading and Title
+		h1 {
+			font-size: @base-font-size * 1.6;
+			line-height: @base-line-height * 1.45;
+		}
+		h2, .title {
+			font-size: @base-font-size * 1.5;
+			line-height: @base-line-height * 1.45;
+		}
+		h3 {
+			font-size: @base-font-size * 1.4;
+			line-height: @base-line-height * 1.35;
+		}
+		h4 {
+			font-size: @base-font-size * 1.3;
+			line-height: @base-line-height * 1.35;
+		}
+		h5 {
+			font-size: @base-font-size * 1.2;
+			line-height: @base-line-height * 1.25;
+		}
+		h6 {
+			font-size: @base-font-size * 1.1;
+			line-height: @base-line-height * 1.25;}
+	}
+}
+
+// Tablet Modes
+@media (min-width: 768px) and (max-width: 959px) {
+	body.layout-mode-responsive {
+		// Responsive Classes
+		.visible-tablet {
+			display: inherit !important;
+		}
+		.hidden-tablet {
+			display: none !important;
+		}
+		.hidden-desktop {
+			display: inherit !important;
+		}
+		.visible-desktop {
+			display: none !important;
+		}
+		.visible-large {
+			display: none !important;
+		}
+		.hidden-large {
+			display: inherit !important;
+		}
+
+		// Heading and Title
+		h1 {
+			font-size: @base-font-size * 1.5;
+			line-height: @base-line-height * 1.35;
+		}
+		h2, .title {
+			font-size: @base-font-size * 1.4;
+			line-height: @base-line-height * 1.35;
+		}
+		h3 {
+			font-size: @base-font-size * 1.3;
+			line-height: @base-line-height * 1.25;
+		}
+		h4 {
+			font-size: @base-font-size * 1.2;
+			line-height: @base-line-height * 1.25;
+		}
+		h5 {
+			font-size: @base-font-size * 1.1;
+			line-height: @base-line-height * 1.15;
+		}
+		h6 {
+			font-size: @base-font-size * 1.05;
+			line-height: @base-line-height * 1.15;
+		}
+
+		// Menu
+		.gf-menu {
+			&.l1 > li {
+				 > .item {
+					font-size: 13px;
+					padding: 0 5px;
+				 }
+				 &.parent > .item {
+				 	.menu-item-bg {
+				 		padding: 5px;
+				 	}
+				 	&:after {
+				 		display: none;
+				 	}
+				 }
+			}
+		}
+	}
+}
+
+// Mobile Modes
+@media (max-width: 767px) {
+	body.layout-mode-responsive {
+		padding: 0;
+
+		// Core
+		#rt-page-surround {
+			padding: 0;
+		}
+
+		// Responsive Classes
+		.visible-phone {
+			display: inherit !important;
+		}
+		.hidden-phone {
+			display: none !important;
+		}
+		.hidden-desktop {
+			display: inherit !important;
+		}
+		.visible-desktop {
+			display: none !important;
+		}
+		.hidden-large {
+			display: inherit !important;
+		}
+		.visible-large {
+			display: none !important;
+		}
+
+		// Typography
+		.rt-phone-center {
+			text-align: center;
+		}
+
+		// Heading and Title
+		h1 {
+			font-size: @base-font-size * 1.4;
+			line-height: @base-line-height * 1.25;
+		}
+		h2, .title {
+			font-size: @base-font-size * 1.3;
+			line-height: @base-line-height * 1.25;
+		}
+		h3 {
+			font-size: @base-font-size * 1.2;
+			line-height: @base-line-height * 1.15;
+		}
+		h4 {
+			font-size: @base-font-size * 1.1;
+			line-height: @base-line-height * 1.15;
+		}
+		h5 {
+			font-size: @base-font-size * 1.05;
+			line-height: @base-line-height * 1.05;
+		}
+		h6 {
+			font-size: @base-font-size * 1.0;
+			line-height: @base-line-height * 1.05;}
+
+		// Logo
+		.rt-logo-block {
+			padding: 5px 0;
+		}
+		#rt-logo {
+			margin: 15px auto;
+		}
+
+		// Menu
+		.menu-block {
+			float: none;
+			margin: auto;
+			border-bottom: none;
+		}
+		.dropdown {
+			background: none !important;
+			box-shadow: none !important;
+			border: 0 !important;
+		}
+		.dropdown-spacer {
+			display: none !important;
+		}
+		.flyout {
+			margin-left: 0 !important;
+		}
+
+		// Copyright
+		#rt-copyright {
+			text-align: center;
+		}
+
+		// Joomla Core
+		.component-content {
+			.column-1, .column-2, .column-3, .column-4 {
+				width: 100% !important;
+				float: none !important;
+				margin: 0 !important;
+			}
+		}
+
+		// Branding
+		.rt-powered-by {
+			margin: 0 auto;
+		}
+
+		// Extras
+		.gantry-width-20, .gantry-width-25, .gantry-width-30, .gantry-width-33, .gantry-width-40, .gantry-width-50, .gantry-width-60, .gantry-width-66, .gantry-width-70, .gantry-width-75, .gantry-width-80 {
+			width: 100%;
+		}
+		.gantry-width-spacer {
+			margin: 0 5px;
+		}
+
+		.row {
+			margin: 0;
+			display: block;
+
+			.cell {
+				display: block;
+				width: 100%;
+			}
+		}
+
+		.form-horizontal {
+			.control-group {
+				.control-label {
+					float:none;
+					width: auto;
+					text-align:left;
+				}
+				.controls {
+					margin-left: 0;
+				}
+			}
+		}
+		select {
+			width: 100%;
+		}
+	}
+}
+
+// Small Screen Mobile Modes
+@media only screen and (max-width: 480px) {
+	body.layout-mode-responsive {
+		// Core
+		.rt-container {
+			width: 100%;
+		}
+		// Heading and Title
+		h1 {
+			font-size: @base-font-size * 1.3;
+			line-height: @base-line-height * 1.15;
+		}
+		h2, .title {
+			font-size: @base-font-size * 1.2;
+			line-height: @base-line-height * 1.15;
+		}
+		h3 {
+			font-size: @base-font-size * 1.1;
+			line-height: @base-line-height * 1.05;
+		}
+		h4 {
+			font-size: @base-font-size * 1.05;
+			line-height: @base-line-height * 1.05;
+		}
+		h5 {
+			font-size: @base-font-size * 1.0;
+			line-height: @base-line-height * 1.0;
+		}
+		h6 {
+			font-size: @base-font-size * 0.9;
+			line-height: @base-line-height * 1.0;
+		}
+	}
+
+}
